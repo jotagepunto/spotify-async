@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Async Explorer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Spotify Async Explorer</h1>
+
+  <section id="explicacion">
+    <h2>¿Por qué usamos la API de Spotify?</h2>
+    <p>
+      La API de Spotify es un ejemplo real de cómo las aplicaciones modernas
+      consumen datos externos de forma <strong>asíncrona</strong>. Usando
+      <code>fetch</code>, <code>async/await</code> y <code>Promises</code>
+      nativos de JavaScript, podemos pedir datos a Spotify sin bloquear la
+      interfaz mientras esperamos la respuesta del servidor.
+    </p>
+  </section>
+
+  <section id="albums">
+    <h2>Álbumes</h2>
+    <div id="lista-albums">Cargando...</div>
+  </section>
+
+  <script src="js/auth.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

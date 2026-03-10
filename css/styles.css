@@ -1,0 +1,7 @@
+/* css/styles.css */
+body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+h1 { color: #1DB954; }
+.card { display: flex; align-items: center; gap: 12px; padding: 10px; border-bottom: 1px solid #ddd; }
+a { color: #1DB954; }
+audio { display: block; margin-top: 10px; }
+img { border-radius: 4px; }

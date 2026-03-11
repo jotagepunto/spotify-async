@@ -14,7 +14,7 @@ async function renderArtist() {
       <h1>${artist.name}</h1>
       <p>Seguidores: ${artist.followers?.total?.toLocaleString() ?? 'No disponible'}</p>
       <p>Popularidad: ${artist.popularity}/100</p>
-      <p>Géneros: ${artist.genres.join(', ') || 'No especificado'}</p>
+      <p>Géneros: ${artist.genres?.join(', ') || 'No especificado'}</p>
     `;
 
   } catch (error) {

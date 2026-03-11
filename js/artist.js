@@ -12,7 +12,7 @@ async function renderArtist() {
     detalleEl.innerHTML = `
       <img src="${artist.images[0]?.url}" width="150">
       <h1>${artist.name}</h1>
-      <p>Seguidores: ${artist.followers.total.toLocaleString()}</p>
+      <p>Seguidores: ${artist.followers?.total?.toLocaleString() ?? 'No disponible'}</p>
       <p>Popularidad: ${artist.popularity}/100</p>
       <p>Géneros: ${artist.genres.join(', ') || 'No especificado'}</p>
     `;

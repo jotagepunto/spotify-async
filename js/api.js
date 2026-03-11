@@ -20,7 +20,8 @@ async function spotifyFetch(endpoint) {
 // Obtener lista de álbumes de un artista conocido (ej: Taylor Swift)
 async function getAlbums() {
   // ID de Taylor Swift como ejemplo, puede cambiarse
-  const data = await spotifyFetch('/artists/2nszmSgqreOHnfuX9U1CDg/albums?limit=10&include_groups=album');
+  // CORRECTO
+  const data = await spotifyFetch('/artists/2nszmSgqreHSdJA3zWPyrW/albums?limit=10&include_groups=album');
   return data.items;
 }
 

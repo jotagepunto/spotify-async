@@ -1,4 +1,3 @@
-// js/track.js
 
 async function renderTrack() {
   const params = new URLSearchParams(window.location.search);
@@ -9,7 +8,6 @@ async function renderTrack() {
   try {
     const track = await getTrack(trackId);
 
-    // Ajustamos el enlace "volver"
     document.getElementById('volver-album').href = 'album.html?id=' + track.album.id;
 
     const duracion = Math.floor(track.duration_ms / 60000) + ':' +

@@ -1,4 +1,3 @@
-// js/artist.js
 
 async function renderArtist() {
   const params = new URLSearchParams(window.location.search);

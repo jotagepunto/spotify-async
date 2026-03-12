@@ -1,4 +1,3 @@
-// js/album.js
 
 async function renderAlbum() {
   const params = new URLSearchParams(window.location.search);
@@ -8,8 +7,6 @@ async function renderAlbum() {
   const tracksEl = document.getElementById('lista-tracks');
 
   try {
-    // Dos llamadas asíncronas en PARALELO con Promise.all
-    // Aquí mostramos que podemos lanzar varias promesas simultáneamente
     const [album, tracks] = await Promise.all([
       getAlbum(albumId),
       getAlbumTracks(albumId)
